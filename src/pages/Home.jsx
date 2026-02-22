@@ -16,6 +16,6 @@ export default function Home() {
 
   return <div>
     <Createpost/>
-    {posts.reverse().map(post=><PostItem isHome postItem={post} key={post?._id}></PostItem>)}
+    {posts?.reverse().map(post=><PostItem isHome postItem={post} key={post?._id}></PostItem>)}
   </div>;
 }
